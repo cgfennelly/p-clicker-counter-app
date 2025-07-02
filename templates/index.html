@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Counter</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="manifest" href="/static/manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/icons/icon-192x192.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/static/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/static/icons/icon-512x512.png">
+</head>
+<body>
+    <div class="main-container">
+        <div class="points-container">
+            <button id="first-button"><span id="daily-first-points">0</span></button>
+            <p class="points-data">Total points: <span id="total-first-points">Loading...</span></p>
+            <p class="points-data">Rolling avg: <span id="seven-day-avg-points"></span></p>
+        </div>
+        <div class="points-container">
+            <button id="second-button"><span id="daily-second-points">0</span></button>
+            <p class="points-data">Total clicks: <span id="total-second-points">Loading...</span></p>
+        </div>
+        <div class="points-container">
+            <button id="third-button"><span id="daily-third-points">0</span></button>
+            <p class="points-data">Total clicks: <span id="total-third-points">Loading...</span></p>
+        </div>
+    </div>
+    <script src="static/script.js""></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/static/sw.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+</body>
+</html>
+
+

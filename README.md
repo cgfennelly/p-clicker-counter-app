@@ -12,9 +12,9 @@ The app itself is a basic clicker-counter, designed for crowd control at events.
 
 ## Tasks
 
-- [ ] Host a simplified version of the app, accessible by HTTP  
-- [ ] Complete the front-end and back-end  
-- [ ] Add a bash script to tear down and rebuild the Docker container  
+- [/] Host a simplified version of the app, accessible by HTTP (example available on http://140.238.67.172:8077/)
+- [/] Complete the front-end and back-end  
+- [/] Add a bash script to tear down and rebuild the Docker container  
 - [ ] Update to meet PWA requirements (e.g. HTTPS)  
 - [ ] Add a webhook for auto-updates so changes can be deployed automatically  
 
@@ -31,14 +31,14 @@ The app itself is a basic clicker-counter, designed for crowd control at events.
     chmod +x ./webhook-deploy.sh
     ```
 
-4. Open the correct port (e.g. 8087):
+4. Open the correct port (e.g. 8077):
    - On the VM:
 
      ```bash
      sudo ufw allow 8087
      ```
 
-   - On the cloud subnet: allow traffic to port 8087 from `0.0.0.0/0`
+   - On the cloud subnet: allow traffic to port 8077 from `0.0.0.0/0`
 
 5. Update Nginx config to proxy to the app (TODO: add details)
 
@@ -54,7 +54,7 @@ The app itself is a basic clicker-counter, designed for crowd control at events.
     docker ps -a | grep clicker-counter-app
     ```
 
-7. Visit `http://<your-ip>:8087` from another device. On mobile, you can select *"Add to Home Screen"* to install the PWA and get a more native app experience.
+7. Visit `http://<your-ip>:8077` from another device. On mobile, you can select *"Add to Home Screen"* to install the PWA and get a more native app experience.
 
 ---
 

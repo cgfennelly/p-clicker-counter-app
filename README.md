@@ -12,7 +12,7 @@ The app itself is a basic clicker-counter, designed for crowd control at events.
 
 ## Tasks
 
-- [/] Host a simplified version of the app, accessible by HTTP (example available on http://140.238.67.172:8077/)
+- [/] Host a simplified version of the app, accessible by HTTP (example available on http://193.123.185.59:8077/)
 - [/] Complete the front-end and back-end  
 - [/] Add a bash script to tear down and rebuild the Docker container  
 - [ ] Update to meet PWA requirements (e.g. HTTPS)  

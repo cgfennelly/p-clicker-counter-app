@@ -173,5 +173,6 @@ if __name__ == '__main__':
         print("environment not configured")
 
 # Statement to test this:
-# curl -X POST -H "Content-Type: application/json"  http://127.0.0.1:5000/click
+# curl -X POST -H "Content-Type: application/json"  http://127.0.0.1:5000/first-point
+# curl -X POST -H "Content-Type: application/json" http://193.123.185.59:8077/first-point
 

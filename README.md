@@ -16,7 +16,7 @@ The app itself is a basic clicker-counter, designed for crowd control at events.
 - [/] Complete the front-end and back-end  
 - [/] Add a bash script to tear down and rebuild the Docker container  
 - [/] Update to meet PWA requirements (e.g. HTTPS)  
-- [ ] Add a webhook for auto-updates so changes can be deployed automatically  
+- [/] Add a webhook for auto-updates so changes can be deployed automatically  
 
 ---
 

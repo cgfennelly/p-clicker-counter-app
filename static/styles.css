@@ -37,7 +37,7 @@ body {
 
 
 #first-button {
-    background-color: #00ff00; 
+    background-color: #ffc400; 
     color: #0a0f1e; 
     font-size: 3rem; 
     font-weight: bold;
@@ -47,14 +47,14 @@ body {
     border: 2px solid #bbbbbb; 
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 0 0 10px #00ff00; 
+    box-shadow: 0 0 10px #ffc400; 
     transition: transform 0.1s ease-in-out, box-shadow 0.2s;
 }
 
 
 #first-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #00ff00;
+    box-shadow: 0 0 15px #ffc400;
 }
 
 #second-button {
@@ -79,7 +79,7 @@ body {
 
 
 #third-button {
-    background-color: #ffc400; 
+    background-color: #00ff00; 
     color: #0a0f1e; 
     font-size: 3rem; 
     font-weight: bold;
@@ -89,12 +89,12 @@ body {
     border: 2px solid #bbbbbb; 
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 0 0 10px #ffc400; 
+    box-shadow: 0 0 10px #00ff00; 
     transition: transform 0.1s ease-in-out, box-shadow 0.2s;
 }
 
 #third-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #ffc400;
+    box-shadow: 0 0 15px #00ff00;
 }
 

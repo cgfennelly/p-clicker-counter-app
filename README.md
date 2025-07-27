@@ -15,12 +15,23 @@ The app itself is a basic clicker-counter, designed for crowd control at events.
 - [/] Host a simplified version of the app, accessible by HTTP (example available on http://193.123.185.59:8077/)
 - [/] Complete the front-end and back-end  
 - [/] Add a bash script to tear down and rebuild the Docker container  
-- [ ] Update to meet PWA requirements (e.g. HTTPS)  
+- [/] Update to meet PWA requirements (e.g. HTTPS)  
 - [ ] Add a webhook for auto-updates so changes can be deployed automatically  
 
 ---
 
-## Installation instructions
+## Installation of the hosted demo
+This is an example hosting of the app and uses a common database. So this won't be a useful version of the app to use (see 'Installation instructions for self-hosting' for that), but this will provide a demo for how the app works.
+The following instructions work on iOS devices, but a similar installation process is available on Android.
+1. In Safari, navigate to https://click.portfoliofennelly.uk
+2. Via the share button, select 'Add to Home Screen'. You can then select the app name.
+3. This will provide a native app experience - clicking on the app will open this in a dedicated window (i.e., not as another tab in the web broswer app).
+<p align="center">
+  <img src="static/img/clicker-counter-app.jpg" alt="Clicker Counter App" width="400">
+</p>
+
+
+## Installation instructions for self-hosting
 
 1. Clone the repo to your host machine  
 2. Ensure the following are installed: Docker, sqlite3, python3  

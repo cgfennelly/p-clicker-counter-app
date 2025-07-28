@@ -1,8 +1,6 @@
 const CACHE_NAME = 'click-counter-cache-v1';
 const urlsToCache = [
     '/',
-    '/static/styles.css',
-    '/static/script.js',
     '/static/manifest.json',
     '/static/icons/icon-192x192.png',
     '/static/icons/icon-512x512.png'
